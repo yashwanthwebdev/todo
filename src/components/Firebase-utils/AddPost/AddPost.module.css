@@ -1,0 +1,16 @@
+.mainContainer{
+    max-width:40ch;
+    /* position: fixed; */
+    /* right:30ch;
+    top:10ch; */
+    display:flex;
+    flex-direction:column;
+     gap:2ch;
+}
+
+.inputActivity{
+    height:8ch;
+    display:inline-block;
+    text-align: center;
+    
+}

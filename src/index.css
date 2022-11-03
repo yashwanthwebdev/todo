@@ -5,8 +5,9 @@ body,html {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url('./assets/background.jpg');
-  background-size: cover;
+  /* background-image: url('./assets/background.jpg'); */
+  /* background-color:rgba(59, 196, 196, 0.9);
+  background-size: cover; */
   max-height:100vh;
    
 }

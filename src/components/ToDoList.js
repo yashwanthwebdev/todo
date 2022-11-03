@@ -4,7 +4,8 @@ import store from "./ToDoStore";
 import { observer } from "mobx-react";
 import style from "../styles/ToDoList.module.css";
 import { Button, DatePicker, Space } from "antd";
-import "antd/dist/antd.css";
+// import "antd/dist/antd.css";
+import 'antd/dist/antd.min.css';
 import { useState, useEffect } from "react";
 import {
   EditFilled,

@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+  /* margin-top:5%; */
+  /* max-height:100vh; */
+}
+
+*{
+  /* outline:solid;
+  outline-color:tomato; */
+}
+
+.mainContainer {
+  display:flex;
+  flex-direction:row;
+  gap:10%;
+  place-content: center;
+}
+.title {
+   color:rgb(231, 14, 14);
+   font-size:2rem;
+   text-align:center;
+   width:100%;
+   font-weight:700;
+   /* margin-top:5%; */
+}
+
+.welcomeMessage{
+  position:fixed;
+  top:2ch;
+  right:15ch;
+}
+
+body{
+  background-color: rgb(74, 4, 76,0.9);
+  /* background-color: rgb(26, 172, 172); */
+  background-attachment: fixed;
+}
+
+.eachTodoContainer{
+  display:flex;
+  flex-direction:column;
+  flex-basis:1;
+  color:white;
+  background-color:rgba(212, 32, 119, 0.5);
+  /* width:25%; */
+  height:min-content;
+  border-radius:1ch;
+  place-content: center;
+  place-items:center;
+  gap:1ch;
+
+
+}
+
+.todoList {
+  display:flex;
+  flex-direction:column;
+ place-content: center;
+ place-items:center;
+  text-align:center;
+  gap:10ch;
+
+}
+
+
+
+.inputActivity  {
+  margin-left:auto;
+  margin-right:auto;
+  font-weight:700;
+  color:rgb(231, 14, 14);
+  font-size:1rem;
+  text-align: center;
+  /* width:100%; */
+  border-radius: 0.5ch;
+}
+
+.doneButton {
+ display:inline;
+background-color: rgb(43, 141, 226);
+}
+
+.editButton {
+  display:inline;
+}
