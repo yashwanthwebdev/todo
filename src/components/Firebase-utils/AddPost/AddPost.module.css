@@ -5,7 +5,16 @@
     top:10ch; */
     display:flex;
     flex-direction:column;
-     gap:2ch;
+     gap:1ch;
+     place-items:center;
+     place-content:center;
+}
+
+.title{
+    color:white;
+    font-weight:800;
+    font-size:1rem;
+
 }
 
 .inputActivity{
@@ -13,4 +22,17 @@
     display:inline-block;
     text-align: center;
     
+}
+
+.addButton {
+    width:10ch;
+    cursor:pointer;
+    border:none;
+    outline:none;
+}
+
+.addButton:hover{
+    background-color: rgb(255, 255, 255);
+   color:black;
+    outline:none;
 }

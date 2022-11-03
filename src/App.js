@@ -15,6 +15,7 @@ function App() {
   const [todoList, setTodoList] = useState(null);
   const [editable,setEditable] = useState("null")
   const activityRef = useRef("");
+  const inputRef = useRef();
  
 
   useEffect ( ()=> {
@@ -22,7 +23,8 @@ function App() {
     }, [todoList])
 
    useEffect ( ()=> {
-    console.log("editable toggled to ", editable)
+    console.log("editable toggled to ", editable);
+   
    },[editable])
 
   
@@ -91,7 +93,9 @@ setTodoList( tempList)
         {todoList?.map( (eachTodo,index)=> {
           return <div className={style.eachTodoContainer} 
           key={eachTodo.id}>
-              <input defaultValue={eachTodo.activity}   
+              <input 
+              ref= {inputRef}
+              defaultValue={eachTodo.activity}   
               readOnly={editable!==eachTodo.id}
             className={style.inputActivity}
              onChange={(event)=>{
@@ -106,6 +110,7 @@ setTodoList( tempList)
     {/* button edit */}
           <button className={style.editButton} onClick={(event)=> {
               setEditable(eachTodo.id);
+              inputRef.current.focus();
                 }
           }  
               >edit</button>
@@ -119,7 +124,7 @@ setTodoList( tempList)
 
     {/* button done */}
          {  editable === eachTodo.id ? 
-         <button id="doneButton" onClick={(event)=> {setEditable(false);
+         <button className={style.doneButton} onClick={(event)=> {setEditable(false);
           setEditable("null");
           console.log("input value is ", activityRef.current);
            const docRef = doc(db, "todo", eachTodo.id);

@@ -73,13 +73,39 @@ body{
   text-align: center;
   /* width:100%; */
   border-radius: 0.5ch;
+  border:none;
+  caret-color: greenyellow;
+  font-variant: small-caps;
+   
 }
 
-.doneButton {
- display:inline;
-background-color: rgb(43, 141, 226);
-}
+
 
 .editButton {
   display:inline;
+  cursor:pointer;
+  border:none;
+  margin:0.5ch;
 }
+
+.editButton:hover{
+  background-color: rgb(255, 255, 255);
+ color:black;
+  outline:none;
+}
+
+.doneButton {
+  display:inline;
+ background-color: rgb(43, 141, 226);
+ cursor:pointer;
+ border:none;
+ }
+
+.doneButton:hover{
+  background-color: rgb(255, 255, 255);
+ color:black;
+  outline:none;
+   
+}
+
+

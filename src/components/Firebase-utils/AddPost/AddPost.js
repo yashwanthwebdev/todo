@@ -37,11 +37,11 @@ console.log(currentDate)
   return (
     <div className={style.mainContainer}>
         
-<h1 style={{textAlign:"center",color:"white"}}>Add a todo</h1>
+<span className={style.title}  >Add a todo</span>
   
       <input ref={activityRef} className={style.inputActivity} name="activity" placeholder="enter your activity" />
-      <input ref={deadlineRef} name="deadline" placeholder="enter the deadline"/>
-      <button onClick={()=> createPost() }>add</button>
+      <input ref={deadlineRef} name="deadline" placeholder="enter deadline (dd-mm-yyyy"/>
+      <button className={style.addButton} onClick={()=> createPost() }>add</button>
     </div>
   )
 }
