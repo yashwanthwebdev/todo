@@ -1,42 +1,44 @@
-.mainContainer{
-    color:white;
-    margin-top:3ch;
-    display:flex;
-    flex-direction:column;
-    place-content: center;
-    place-items:center;
-    gap:3ch;
+.mainContainer {
+  color: white;
+  margin-top: 3ch;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  gap: 3ch;
 }
 
-.mainContainer >div {
-    display:flex;
-    flex-direction:column;
-    place-content: center;
-    place-items:center;
-    gap:1ch;
+.mainContainer > div {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  gap: 1ch;
 }
 
 input {
-    border-radius: 2ch;
-    margin-left:2ch;
-    background-color: black;
-    color:white;
+  border-radius: 2ch;
+  margin-left: 2ch;
+  background-color: black;
+  color: white;
 }
 
 button {
-    background-color: black;
-    color:white;
-    border-radius: 1ch;
+  background-color: black;
+  color: white;
+  border-radius: 1ch;
 }
 
-.logoutButton{
-    position:fixed;
-    top:2ch;
-    right:4ch;
+.logoutButton {
+  position: fixed;
+  top: 2ch;
+  right: 4ch;
 }
 
-.loginError{
-    color:red;
-    font-weight:700;
-    background-color: white;
+.loginError {
+  color: red;
+  font-weight: 700;
+  word-spacing: 1ch;
+  letter-spacing: 0.3ch;
+  /* background-color: white; */
 }
